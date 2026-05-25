@@ -302,7 +302,7 @@ export default function Index() {
               <p className="text-base max-w-xl mx-auto" style={{ color: "rgba(78,75,73,0.65)" }}>Вы не станете «идеальным человеком». Но многое внутри станет проще, спокойнее и понятнее.</p>
             </div>
           </Reveal>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4 max-w-3xl mx-auto w-full">
             {[
               "Начнёте лучше понимать себя и свои настоящие желания",
               "Перестанете жить только через чувство долга и постоянное «надо»",
@@ -381,7 +381,9 @@ export default function Index() {
           </div>
 
           <Reveal><h3 className="section-title text-3xl text-center mb-8">Что входит в программу</h3></Reveal>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+          {/* Weeks 1–5 */}
+          <div className="flex flex-wrap justify-center gap-5 mb-14">
             {[
               { num: "01", title: "Снятие напряжения", items: ["Работа с тревогой", "Контакт с телом", "Понимание своих состояний"] },
               { num: "02", title: "Контакт с собой", items: ["Исследование желаний", "Работа с запретом «хотеть»", "Поиск внутренних опор"] },
@@ -389,7 +391,7 @@ export default function Index() {
               { num: "04", title: "Эмоции", items: ["Проживание обид и вины", "Разрешение чувствовать", "Снижение самоконтроля"] },
               { num: "05", title: "Новое ощущение себя", items: ["Понимание желаний", "Новые привычки и состояния", "Закрепление изменений"] },
             ].map((m, i) => (
-              <Reveal key={i} delay={i * 0.07}>
+              <Reveal key={i} delay={i * 0.07} className="w-full sm:w-[calc(50%-10px)] lg:w-[calc(33.333%-14px)]">
                 <div className="card-hover rounded-3xl p-6 h-full" style={{ background: "rgba(255,255,255,0.45)", border: "1px solid rgba(200,200,174,0.4)" }}>
                   <div className="text-xs font-bold tracking-widest mb-3" style={{ color: "var(--sage-light)" }}>{m.num}</div>
                   <h4 className="section-title text-xl mb-3">{m.title}</h4>
@@ -401,6 +403,90 @@ export default function Index() {
                       </li>
                     ))}
                   </ul>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          {/* Weeks 6–9 deep block */}
+          <Reveal>
+            <div className="rounded-3xl px-8 py-6 mb-8 text-center" style={{ background: "rgba(152,160,111,0.12)", border: "1px solid rgba(152,160,111,0.3)" }}>
+              <div className="text-xs font-bold tracking-widest uppercase mb-2" style={{ color: "var(--sage)" }}>Только в тарифе 9 недель</div>
+              <h3 className="section-title text-2xl">Дополнительный блок — глубокое сопровождение</h3>
+            </div>
+          </Reveal>
+          <div className="grid sm:grid-cols-2 gap-5">
+            {[
+              {
+                num: "06",
+                title: "«Я устал(а) всё контролировать»",
+                theme: "Тревога, гиперконтроль и внутреннее напряжение",
+                topics: ["Почему невозможно расслабиться", "Привычка всё держать в голове", "Тревога как фоновое состояние"],
+                practices: ["Телесные техники на расслабление", "Арт-терапия «Мой контроль»", "Метафорические карты на доверие себе"],
+                after: ["Анти-тревожный чек-лист", "Практика «замедления»", "Упражнения на возвращение в тело"],
+              },
+              {
+                num: "07",
+                title: "«Я боюсь проявляться настоящей»",
+                theme: "Страх осуждения и проявленности",
+                topics: ["Страх быть непонятой", "Страх оценки и отвержения", "Почему сложно показывать себя"],
+                practices: ["Арт-терапия «Настоящая я»", "Работа с образом себя", "Метафорические карты на проявленность"],
+                after: ["Практика безопасного проявления", "Задания на контакт с собой", "Дневник уверенности"],
+              },
+              {
+                num: "08",
+                title: "«Я всё время живу для других»",
+                theme: "Выход из роли «удобного человека»",
+                topics: ["Привычка спасать и угождать", "Жизнь через ожидания других", "Потеря себя в отношениях"],
+                practices: ["Арт-практика «Где в этой жизни я?»", "Техника разделения «моё / чужое»", "Работа с конфликтами через карты"],
+                after: ["Чек-лист «Что важно именно мне»", "Практика возвращения потребностей", "Упражнения на устойчивые границы"],
+              },
+              {
+                num: "09",
+                title: "«Я могу жить по-другому»",
+                theme: "Интеграция новой внутренней опоры",
+                topics: ["Кем вы стали за эти недели", "Как сохранить изменения", "Жизнь из «хочу», а не только «надо»"],
+                practices: ["Итоговая арт-терапия «Моя новая жизнь»", "Визуализация будущего", "Образ себя через метафорические карты"],
+                after: ["Персональный план поддержки себя", "Карта изменений и достижений", "Набор практик на будущее", "Рекомендации для дальнейшего пути"],
+              },
+            ].map((m, i) => (
+              <Reveal key={i} delay={i * 0.08}>
+                <div className="card-hover rounded-3xl p-6 h-full flex flex-col gap-4" style={{ background: "rgba(201,217,232,0.2)", border: "1px solid rgba(201,217,232,0.5)" }}>
+                  <div>
+                    <div className="text-xs font-bold tracking-widest mb-2" style={{ color: "var(--sage)" }}>{m.num} неделя</div>
+                    <h4 className="section-title text-xl mb-1">{m.title}</h4>
+                    <p className="text-xs italic" style={{ color: "rgba(78,75,73,0.55)" }}>{m.theme}</p>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--sage)" }}>Что разбираем</p>
+                    <ul className="flex flex-col gap-1">
+                      {m.topics.map((t, j) => (
+                        <li key={j} className="flex items-center gap-2 text-sm" style={{ color: "rgba(78,75,73,0.75)" }}>
+                          <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "var(--sage)" }} />{t}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--sage)" }}>Практики</p>
+                    <ul className="flex flex-col gap-1">
+                      {m.practices.map((t, j) => (
+                        <li key={j} className="flex items-center gap-2 text-sm" style={{ color: "rgba(78,75,73,0.75)" }}>
+                          <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "var(--sky)" }} />{t}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="rounded-2xl px-4 py-3 mt-auto" style={{ background: "rgba(255,255,255,0.5)" }}>
+                    <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "rgba(78,75,73,0.5)" }}>После встречи</p>
+                    <ul className="flex flex-col gap-1">
+                      {m.after.map((t, j) => (
+                        <li key={j} className="flex items-center gap-2 text-xs" style={{ color: "rgba(78,75,73,0.65)" }}>
+                          <Icon name="Check" size={11} style={{ color: "var(--sage)", flexShrink: 0 } as React.CSSProperties} />{t}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </Reveal>
             ))}
