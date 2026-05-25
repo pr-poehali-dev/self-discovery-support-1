@@ -169,7 +169,7 @@ export default function Index() {
         }}
       >
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <a href="#" style={{ fontFamily: "Cormorant, serif", fontSize: "1.3rem", color: "var(--text)", fontWeight: 500 }}>Екатерина</a>
+          <a href="#" style={{ fontFamily: "Cormorant, serif", fontSize: "1.3rem", color: "var(--text)", fontWeight: 500 }}>Екатерина Довженко</a>
           <nav className="hidden md:flex items-center gap-7">
             {navLinks.map(l => <a key={l.href} href={l.href} className="nav-link">{l.label}</a>)}
           </nav>
@@ -419,74 +419,50 @@ export default function Index() {
             {[
               {
                 num: "06",
-                title: "«Я устал(а) всё контролировать»",
-                theme: "Тревога, гиперконтроль и внутреннее напряжение",
-                topics: ["Почему невозможно расслабиться", "Привычка всё держать в голове", "Тревога как фоновое состояние"],
-                practices: ["Телесные техники на расслабление", "Арт-терапия «Мой контроль»", "Метафорические карты на доверие себе"],
-                after: ["Анти-тревожный чек-лист", "Практика «замедления»", "Упражнения на возвращение в тело"],
+                title: "Работа с тревогой и гиперконтролем",
+                theme: "",
+                topics: ["Понимание причин постоянного внутреннего напряжения", "Снижение тревожности и эмоционального перегруза", "Формирование чувства внутренней безопасности и опоры"],
+                practices: [],
+                after: [],
               },
               {
                 num: "07",
-                title: "«Я боюсь проявляться настоящей»",
-                theme: "Страх осуждения и проявленности",
-                topics: ["Страх быть непонятой", "Страх оценки и отвержения", "Почему сложно показывать себя"],
-                practices: ["Арт-терапия «Настоящая я»", "Работа с образом себя", "Метафорические карты на проявленность"],
-                after: ["Практика безопасного проявления", "Задания на контакт с собой", "Дневник уверенности"],
+                title: "Проявленность и уверенность в себе",
+                theme: "",
+                topics: ["Работа со страхом осуждения и оценки", "Разрешение быть настоящей, а не «удобной»", "Развитие уверенности в самовыражении и общении"],
+                practices: [],
+                after: [],
               },
               {
                 num: "08",
-                title: "«Я всё время живу для других»",
-                theme: "Выход из роли «удобного человека»",
-                topics: ["Привычка спасать и угождать", "Жизнь через ожидания других", "Потеря себя в отношениях"],
-                practices: ["Арт-практика «Где в этой жизни я?»", "Техника разделения «моё / чужое»", "Работа с конфликтами через карты"],
-                after: ["Чек-лист «Что важно именно мне»", "Практика возвращения потребностей", "Упражнения на устойчивые границы"],
+                title: "Выход из роли «удобного человека»",
+                theme: "",
+                topics: ["Осознание привычки жить для других", "Возвращение своих желаний и потребностей", "Формирование здоровых личных границ"],
+                practices: [],
+                after: [],
               },
               {
                 num: "09",
-                title: "«Я могу жить по-другому»",
-                theme: "Интеграция новой внутренней опоры",
-                topics: ["Кем вы стали за эти недели", "Как сохранить изменения", "Жизнь из «хочу», а не только «надо»"],
-                practices: ["Итоговая арт-терапия «Моя новая жизнь»", "Визуализация будущего", "Образ себя через метафорические карты"],
-                after: ["Персональный план поддержки себя", "Карта изменений и достижений", "Набор практик на будущее", "Рекомендации для дальнейшего пути"],
+                title: "Новая внутренняя опора и жизнь через «хочу»",
+                theme: "",
+                topics: ["Закрепление внутренних изменений и новых состояний", "Создание жизни с опорой на свои чувства и желания", "Интеграция состояния «я могу жить по-другому» в повседневность"],
+                practices: [],
+                after: [],
               },
             ].map((m, i) => (
               <Reveal key={i} delay={i * 0.08}>
                 <div className="card-hover rounded-3xl p-6 h-full flex flex-col gap-4" style={{ background: "rgba(201,217,232,0.2)", border: "1px solid rgba(201,217,232,0.5)" }}>
                   <div>
                     <div className="text-xs font-bold tracking-widest mb-2" style={{ color: "var(--sage)" }}>{m.num} неделя</div>
-                    <h4 className="section-title text-xl mb-1">{m.title}</h4>
-                    <p className="text-xs italic" style={{ color: "rgba(78,75,73,0.55)" }}>{m.theme}</p>
+                    <h4 className="section-title text-xl mb-3">{m.title}</h4>
                   </div>
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--sage)" }}>Что разбираем</p>
-                    <ul className="flex flex-col gap-1">
-                      {m.topics.map((t, j) => (
-                        <li key={j} className="flex items-center gap-2 text-sm" style={{ color: "rgba(78,75,73,0.75)" }}>
-                          <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "var(--sage)" }} />{t}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "var(--sage)" }}>Практики</p>
-                    <ul className="flex flex-col gap-1">
-                      {m.practices.map((t, j) => (
-                        <li key={j} className="flex items-center gap-2 text-sm" style={{ color: "rgba(78,75,73,0.75)" }}>
-                          <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ background: "var(--sky)" }} />{t}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="rounded-2xl px-4 py-3 mt-auto" style={{ background: "rgba(255,255,255,0.5)" }}>
-                    <p className="text-xs font-semibold uppercase tracking-wider mb-2" style={{ color: "rgba(78,75,73,0.5)" }}>После встречи</p>
-                    <ul className="flex flex-col gap-1">
-                      {m.after.map((t, j) => (
-                        <li key={j} className="flex items-center gap-2 text-xs" style={{ color: "rgba(78,75,73,0.65)" }}>
-                          <Icon name="Check" size={11} style={{ color: "var(--sage)", flexShrink: 0 } as React.CSSProperties} />{t}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                  <ul className="flex flex-col gap-2">
+                    {m.topics.map((t, j) => (
+                      <li key={j} className="flex items-start gap-2 text-sm leading-relaxed" style={{ color: "rgba(78,75,73,0.8)" }}>
+                        <div className="w-1.5 h-1.5 rounded-full flex-shrink-0 mt-1.5" style={{ background: "var(--sage)" }} />{t}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               </Reveal>
             ))}
@@ -516,7 +492,7 @@ export default function Index() {
               <div>
                 <div className="deco-line mb-6" />
                 <p className="text-xs font-medium tracking-widest uppercase mb-3" style={{ color: "var(--sage)" }}>Почему со мной</p>
-                <h2 className="section-title text-5xl mb-2">Екатерина</h2>
+                <h2 className="section-title text-5xl mb-2">Екатерина Довженко</h2>
                 <p className="text-base mb-6" style={{ color: "rgba(78,75,73,0.6)" }}>Психолог, арт-терапевт, игропрактик</p>
                 <p className="leading-relaxed mb-6" style={{ color: "var(--text)" }}>
                   Работаю с людьми, которые устали жить через напряжение, контроль и постоянное «надо». В своей работе я соединяю несколько подходов, чтобы найти путь именно для вас.
@@ -574,7 +550,14 @@ export default function Index() {
                   ))}
                 </div>
                 <div className="border-t pt-6" style={{ borderColor: "rgba(200,200,174,0.4)" }}>
-                  <div className="text-3xl font-bold mb-4" style={{ fontFamily: "Cormorant, serif", color: "var(--text)" }}>25 000 ₽</div>
+                  <div className="flex items-baseline gap-3 mb-1">
+                    <div className="text-3xl font-bold" style={{ fontFamily: "Cormorant, serif", color: "var(--text)" }}>25 000 ₽</div>
+                    <div className="text-base line-through" style={{ color: "rgba(78,75,73,0.4)" }}>35 000 ₽</div>
+                  </div>
+                  <div className="flex items-center gap-1.5 mb-4">
+                    <div className="w-2 h-2 rounded-full" style={{ background: "var(--gold)" }} />
+                    <span className="text-xs font-medium" style={{ color: "rgba(78,75,73,0.6)" }}>Количество мест ограничено</span>
+                  </div>
                   <button onClick={openModal} className="btn-outline rounded-2xl py-3.5 w-full text-sm font-medium">Записаться</button>
                 </div>
               </div>
@@ -600,7 +583,14 @@ export default function Index() {
                     ))}
                   </div>
                   <div className="border-t pt-6" style={{ borderColor: "rgba(255,255,255,0.2)" }}>
-                    <div className="text-3xl font-bold mb-4" style={{ fontFamily: "Cormorant, serif", color: "var(--sand)" }}>45 000 ₽</div>
+                    <div className="flex items-baseline gap-3 mb-1">
+                      <div className="text-3xl font-bold" style={{ fontFamily: "Cormorant, serif", color: "var(--sand)" }}>45 000 ₽</div>
+                      <div className="text-base line-through" style={{ color: "rgba(234,227,219,0.45)" }}>55 000 ₽</div>
+                    </div>
+                    <div className="flex items-center gap-1.5 mb-4">
+                      <div className="w-2 h-2 rounded-full" style={{ background: "var(--gold)" }} />
+                      <span className="text-xs font-medium" style={{ color: "rgba(234,227,219,0.7)" }}>Количество мест ограничено</span>
+                    </div>
                     <button onClick={openModal} className="rounded-2xl py-3.5 w-full text-sm font-medium transition-all duration-300 hover:opacity-90" style={{ background: "var(--sand)", color: "var(--text)" }}>
                       Записаться
                     </button>
