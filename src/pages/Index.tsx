@@ -192,7 +192,7 @@ export default function Index() {
         <div className="absolute blob-2 opacity-20" style={{ width: "280px", height: "280px", background: "var(--sky)", bottom: "60px", left: "-60px" }} />
         <div className="absolute blob-3 opacity-15" style={{ width: "180px", height: "180px", background: "var(--gold)", bottom: "120px", right: "18%" }} />
 
-        <div className="max-w-6xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-16 items-center relative z-10">
+        <div className="max-w-6xl mx-auto px-6 py-10 grid lg:grid-cols-2 gap-16 items-center relative z-10">
           <div>
             <div className="inline-block text-xs font-medium tracking-widest uppercase mb-6 px-4 py-2 rounded-full" style={{ background: "rgba(152,160,111,0.15)", color: "var(--sage)" }}>
               Индивидуальная программа
@@ -241,11 +241,11 @@ export default function Index() {
       </section>
 
       {/* FOR WHOM */}
-      <section id="about-program" className="py-24 relative overflow-hidden">
+      <section id="about-program" className="py-12 relative overflow-hidden">
         <div className="absolute blob-3 opacity-15" style={{ width: "300px", height: "300px", background: "var(--sky)", top: "40px", right: "-60px" }} />
         <div className="max-w-6xl mx-auto px-6">
           <Reveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <div className="deco-line mx-auto mb-6" />
               <h2 className="section-title text-5xl mb-4">Вам подойдёт эта программа, если…</h2>
             </div>
@@ -292,11 +292,11 @@ export default function Index() {
       </section>
 
       {/* RESULTS */}
-      <section className="py-24 relative overflow-hidden" style={{ background: "rgba(201,217,232,0.18)" }}>
+      <section className="py-12 relative overflow-hidden" style={{ background: "rgba(201,217,232,0.18)" }}>
         <div className="absolute blob-1 opacity-12" style={{ width: "350px", height: "350px", background: "var(--sage)", bottom: "-80px", left: "-80px" }} />
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           <Reveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <div className="deco-line mx-auto mb-6" />
               <h2 className="section-title text-5xl mb-4">Что изменится после программы</h2>
               <p className="text-base max-w-xl mx-auto" style={{ color: "rgba(78,75,73,0.65)" }}>Вы не станете «идеальным человеком». Но многое внутри станет проще, спокойнее и понятнее.</p>
@@ -332,11 +332,11 @@ export default function Index() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-12 relative overflow-hidden">
         <div className="absolute blob-2 opacity-12" style={{ width: "250px", height: "250px", background: "var(--gold)", top: "80px", right: "-40px" }} />
         <div className="max-w-5xl mx-auto px-6">
           <Reveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <div className="deco-line mx-auto mb-6" />
               <h2 className="section-title text-5xl mb-4">Как проходит программа</h2>
               <p className="text-base max-w-lg mx-auto" style={{ color: "rgba(78,75,73,0.65)" }}>Это не курс в записи. Это индивидуальное сопровождение — бережно, глубоко и в вашем темпе.</p>
@@ -471,7 +471,7 @@ export default function Index() {
       </section>
 
       {/* ABOUT ME */}
-      <section id="about-me" className="py-24 relative overflow-hidden" style={{ background: "rgba(200,200,174,0.15)" }}>
+      <section id="about-me" className="py-12 relative overflow-hidden" style={{ background: "rgba(200,200,174,0.15)" }}>
         <div className="absolute blob-1 opacity-20" style={{ width: "400px", height: "400px", background: "var(--sage-light)", top: "-80px", left: "-100px" }} />
         <div className="max-w-5xl mx-auto px-6 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -524,11 +524,11 @@ export default function Index() {
       </section>
 
       {/* TARIFFS */}
-      <section id="tariffs" className="py-24 relative overflow-hidden">
+      <section id="tariffs" className="py-12 relative overflow-hidden">
         <div className="absolute blob-3 opacity-18" style={{ width: "300px", height: "300px", background: "var(--sky)", bottom: "60px", right: "-60px" }} />
         <div className="max-w-5xl mx-auto px-6">
           <Reveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <div className="deco-line mx-auto mb-6" />
               <h2 className="section-title text-5xl mb-4">Форматы участия</h2>
             </div>
@@ -609,10 +609,10 @@ export default function Index() {
       </section>
 
       {/* REVIEWS */}
-      <section id="reviews" className="py-24 relative overflow-hidden" style={{ background: "rgba(201,217,232,0.18)" }}>
+      <section id="reviews" className="py-12 relative overflow-hidden" style={{ background: "rgba(201,217,232,0.18)" }}>
         <div className="max-w-5xl mx-auto px-6">
           <Reveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <div className="deco-line mx-auto mb-6" />
               <h2 className="section-title text-5xl mb-4">Отзывы</h2>
               <p className="text-base" style={{ color: "rgba(78,75,73,0.6)" }}>Истории людей, которые уже прошли программу</p>
@@ -645,10 +645,10 @@ export default function Index() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-24">
+      <section id="faq" className="py-12">
         <div className="max-w-3xl mx-auto px-6">
           <Reveal>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <div className="deco-line mx-auto mb-6" />
               <h2 className="section-title text-5xl mb-4">Частые вопросы</h2>
             </div>
@@ -662,7 +662,7 @@ export default function Index() {
       </section>
 
       {/* CTA */}
-      <section className="py-24 relative overflow-hidden" style={{ background: "rgba(152,160,111,0.08)" }}>
+      <section className="py-12 relative overflow-hidden" style={{ background: "rgba(152,160,111,0.08)" }}>
         <div className="absolute blob-1 opacity-22" style={{ width: "350px", height: "350px", background: "var(--sage-light)", top: "-80px", right: "-80px" }} />
         <div className="absolute blob-2 opacity-12" style={{ width: "250px", height: "250px", background: "var(--sky)", bottom: "-60px", left: "-40px" }} />
         <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
@@ -683,7 +683,7 @@ export default function Index() {
       </section>
 
       {/* CONTACTS */}
-      <section id="contact" className="py-24">
+      <section id="contact" className="py-12">
         <div className="max-w-5xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-start">
             <Reveal>
@@ -722,7 +722,7 @@ export default function Index() {
       {/* FOOTER */}
       <footer className="py-10 border-t" style={{ borderColor: "rgba(200,200,174,0.4)" }}>
         <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <div style={{ fontFamily: "Cormorant, serif", fontSize: "1.2rem", color: "var(--text)", fontWeight: 500 }}>Екатерина</div>
+          <div style={{ fontFamily: "Cormorant, serif", fontSize: "1.2rem", color: "var(--text)", fontWeight: 500 }}>Екатерина Довженко</div>
           <p className="text-xs text-center" style={{ color: "rgba(78,75,73,0.45)" }}>Психолог · Арт-терапевт · Игропрактик · {new Date().getFullYear()}</p>
           <button onClick={openModal} className="text-xs underline" style={{ color: "var(--sage)" }}>Записаться на консультацию</button>
         </div>
