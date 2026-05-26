@@ -208,8 +208,7 @@ export default function Index() {
               Когда внутри больше нет сил всё тянуть, терпеть и быть «удобной». Когда хочется не очередной мотивации, а наконец услышать себя — спокойно, без давления.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button onClick={openModal} className="btn-primary rounded-2xl px-8 py-4 text-base font-medium">Хочу участвовать</button>
-              <a href="#about-program" className="btn-outline rounded-2xl px-8 py-4 text-base font-medium text-center">Узнать подробнее</a>
+              <a href="#about-program" className="btn-primary rounded-2xl px-8 py-4 text-base font-medium text-center">Узнать подробнее</a>
             </div>
           </div>
 
@@ -285,7 +284,7 @@ export default function Index() {
                 Но проблема не уходит, потому что дело не в дисциплине.<br />
                 <strong>А в потере контакта с собой.</strong>
               </p>
-              <button onClick={openModal} className="btn-outline rounded-2xl px-7 py-3 text-sm font-medium mt-6 inline-block">Узнать подробнее →</button>
+              <a href="https://t.me/mdm_katso" target="_blank" rel="noopener noreferrer" className="btn-outline rounded-2xl px-7 py-3 text-sm font-medium mt-6 inline-block">Узнать подробнее →</a>
             </div>
           </Reveal>
         </div>
@@ -325,7 +324,7 @@ export default function Index() {
           <Reveal delay={0.3}>
             <div className="text-center mt-12">
               <p className="text-2xl mb-6" style={{ fontFamily: "Cormorant, serif", fontStyle: "italic", color: "var(--sage)" }}>«со мной всё в порядке»</p>
-              <button onClick={openModal} className="btn-primary rounded-2xl px-8 py-4 text-base font-medium">Хочу участвовать</button>
+              <a href="https://t.me/mdm_katso" target="_blank" rel="noopener noreferrer" className="btn-primary rounded-2xl px-8 py-4 text-base font-medium">Хочу участвовать</a>
             </div>
           </Reveal>
         </div>
@@ -513,10 +512,9 @@ export default function Index() {
                     </div>
                   ))}
                 </div>
-                <blockquote className="rounded-2xl px-5 py-4 text-sm leading-relaxed italic mb-8" style={{ background: "rgba(242,201,76,0.12)", border: "1px solid rgba(242,201,76,0.3)", color: "var(--text)" }}>
+                <blockquote className="rounded-2xl px-5 py-4 text-sm leading-relaxed italic" style={{ background: "rgba(242,201,76,0.12)", border: "1px solid rgba(242,201,76,0.3)", color: "var(--text)" }}>
                   «Мне важно, чтобы человек не "ломал себя", а постепенно возвращался к себе настоящему. Без осуждения. Без насилия над собой.»
                 </blockquote>
-                <button onClick={openModal} className="btn-primary rounded-2xl px-7 py-3.5 text-sm font-medium">Хочу участвовать</button>
               </div>
             </Reveal>
           </div>
@@ -558,7 +556,7 @@ export default function Index() {
                     <div className="w-2 h-2 rounded-full" style={{ background: "var(--gold)" }} />
                     <span className="text-xs font-medium" style={{ color: "rgba(78,75,73,0.6)" }}>Количество мест ограничено</span>
                   </div>
-                  <button onClick={openModal} className="btn-outline rounded-2xl py-3.5 w-full text-sm font-medium">Записаться</button>
+                  <a href="https://t.me/mdm_katso" target="_blank" rel="noopener noreferrer" className="btn-outline rounded-2xl py-3.5 w-full text-sm font-medium text-center block">Записаться</a>
                 </div>
               </div>
             </Reveal>
@@ -591,9 +589,7 @@ export default function Index() {
                       <div className="w-2 h-2 rounded-full" style={{ background: "var(--gold)" }} />
                       <span className="text-xs font-medium" style={{ color: "rgba(234,227,219,0.7)" }}>Количество мест ограничено</span>
                     </div>
-                    <button onClick={openModal} className="rounded-2xl py-3.5 w-full text-sm font-medium transition-all duration-300 hover:opacity-90" style={{ background: "var(--sand)", color: "var(--text)" }}>
-                      Записаться
-                    </button>
+                    <a href="https://t.me/mdm_katso" target="_blank" rel="noopener noreferrer" className="rounded-2xl py-3.5 w-full text-sm font-medium text-center block transition-all duration-300 hover:opacity-90" style={{ background: "var(--sand)", color: "var(--text)" }}>Записаться</a>
                   </div>
                 </div>
               </div>
@@ -602,7 +598,7 @@ export default function Index() {
           <Reveal delay={0.2}>
             <p className="text-center text-sm mt-8" style={{ color: "rgba(78,75,73,0.55)" }}>
               Вопросы по оплате или нужна рассрочка?{" "}
-              <button onClick={openModal} className="underline" style={{ color: "var(--sage)" }}>Напишите мне</button>
+              <a href="https://t.me/mdm_katso" target="_blank" rel="noopener noreferrer" className="underline" style={{ color: "var(--sage)" }}>Напишите мне</a>
             </p>
           </Reveal>
         </div>
@@ -677,45 +673,25 @@ export default function Index() {
             <p className="text-base mb-10" style={{ color: "rgba(78,75,73,0.6)" }}>
               Если вы чувствуете, что больше не хотите жить только через «надо» — возможно, сейчас именно тот момент, чтобы начать.
             </p>
-            <button onClick={openModal} className="btn-primary rounded-2xl px-10 py-4 text-base font-medium">Хочу участвовать</button>
+            <a href="https://t.me/mdm_katso" target="_blank" rel="noopener noreferrer" className="btn-primary rounded-2xl px-10 py-4 text-base font-medium inline-block">Хочу участвовать</a>
           </Reveal>
         </div>
       </section>
 
       {/* CONTACTS */}
       <section id="contact" className="py-12">
-        <div className="max-w-5xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
-            <Reveal>
-              <div>
-                <div className="deco-line mb-6" />
-                <h2 className="section-title text-5xl mb-4">Написать Екатерине</h2>
-                <p className="leading-relaxed mb-8" style={{ color: "rgba(78,75,73,0.65)" }}>
-                  Оставьте вопрос или запрос на предварительную консультацию — без обязательств. Я отвечу лично.
-                </p>
-                <div className="flex flex-col gap-4">
-                  <a href="https://t.me/" className="flex items-center gap-3 text-sm" style={{ color: "var(--text)" }}>
-                    <div className="w-10 h-10 rounded-2xl flex items-center justify-center" style={{ background: "rgba(152,160,111,0.15)" }}>
-                      <Icon name="Send" size={16} style={{ color: "var(--sage)" } as React.CSSProperties} />
-                    </div>
-                    Telegram
-                  </a>
-                  <a href="https://instagram.com/" className="flex items-center gap-3 text-sm" style={{ color: "var(--text)" }}>
-                    <div className="w-10 h-10 rounded-2xl flex items-center justify-center" style={{ background: "rgba(152,160,111,0.15)" }}>
-                      <Icon name="Instagram" size={16} style={{ color: "var(--sage)" } as React.CSSProperties} />
-                    </div>
-                    Instagram
-                  </a>
-                </div>
-              </div>
-            </Reveal>
-            <Reveal delay={0.15}>
-              <div className="rounded-3xl p-8" style={{ background: "rgba(255,255,255,0.5)", border: "1px solid rgba(200,200,174,0.4)" }}>
-                <h3 className="section-title text-2xl mb-5">Задать вопрос</h3>
-                <ContactInlineForm />
-              </div>
-            </Reveal>
-          </div>
+        <div className="max-w-xl mx-auto px-6 text-center">
+          <Reveal>
+            <div className="deco-line mx-auto mb-6" />
+            <h2 className="section-title text-5xl mb-4">Написать Екатерине</h2>
+            <p className="leading-relaxed mb-8" style={{ color: "rgba(78,75,73,0.65)" }}>
+              Оставьте вопрос или запрос на предварительную консультацию — без обязательств. Я отвечу лично.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://t.me/mdm_katso" target="_blank" rel="noopener noreferrer" className="btn-primary rounded-2xl px-8 py-4 text-base font-medium">Написать в Telegram</a>
+              <a href="https://max.ru/mdm_katso" target="_blank" rel="noopener noreferrer" className="btn-outline rounded-2xl px-8 py-4 text-base font-medium">Написать в Max</a>
+            </div>
+          </Reveal>
         </div>
       </section>
 
@@ -724,7 +700,7 @@ export default function Index() {
         <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <div style={{ fontFamily: "Cormorant, serif", fontSize: "1.2rem", color: "var(--text)", fontWeight: 500 }}>Екатерина Довженко</div>
           <p className="text-xs text-center" style={{ color: "rgba(78,75,73,0.45)" }}>Психолог · Арт-терапевт · Игропрактик · {new Date().getFullYear()}</p>
-          <button onClick={openModal} className="text-xs underline" style={{ color: "var(--sage)" }}>Записаться на консультацию</button>
+          <a href="https://t.me/mdm_katso" target="_blank" rel="noopener noreferrer" className="text-xs underline" style={{ color: "var(--sage)" }}>Записаться на консультацию</a>
         </div>
       </footer>
 
