@@ -689,7 +689,7 @@ export default function Index() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href="https://t.me/mdm_katso" target="_blank" rel="noopener noreferrer" className="btn-primary rounded-2xl px-8 py-4 text-base font-medium">Написать в Telegram</a>
-              <a href="https://max.ru/mdm_katso" target="_blank" rel="noopener noreferrer" className="btn-outline rounded-2xl px-8 py-4 text-base font-medium">Написать в Max</a>
+              <a href="https://max.ru/u/f9LHodD0cOJkbouMG3Y4Vjx2CFPUD0HQE4I8IeqX9j2oXhh68lLW3743fZ0" target="_blank" rel="noopener noreferrer" className="btn-outline rounded-2xl px-8 py-4 text-base font-medium">Написать в Max</a>
             </div>
           </Reveal>
         </div>
